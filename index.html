@@ -1,28 +1,62 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mr. Cosas Tattoo Shop</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Cosas Tattoo Shop</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Bienvenido a Mr. Cosas Tattoo Shop</h1>
-    <p>Siempre tu lugar favorito.</p>
-  </header>
-  <main>
-    <section>
-      <h2>Joyería de grado implante</h2>
-      <p>Descubre nuestra colección exclusiva con zirconias y titanio grado implante.</p>
+    <header class="sticky-header">
+        <div class="logo">Mr. Cosas Tattoo Shop</div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h1>Bienvenido a Mr. Cosas Tattoo Shop</h1>
+        <p>Arte en la piel con elegancia y precisión.</p>
     </section>
-    <section>
-      <h2>Tatuajes personalizados</h2>
-      <p>Agenda tu cita y lleva en la piel un diseño que hable de ti.</p>
+
+    <section id="servicios" class="section">
+        <h2>Servicios</h2>
+        <ul>
+            <li>Tatuajes personalizados</li>
+            <li>Perforaciones con joyería grado implante</li>
+            <li>Consultas y coberturas en eventos</li>
+        </ul>
     </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 Mr. Cosas Tattoo Shop - Cuernavaca, Morelos</p>
-  </footer>
+
+    <section id="galeria" class="section">
+        <h2>Galería</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/300x300?text=Instagram+1" alt="Tattoo 1">
+            <img src="https://via.placeholder.com/300x300?text=Instagram+2" alt="Tattoo 2">
+            <img src="https://via.placeholder.com/300x300?text=Instagram+3" alt="Tattoo 3">
+        </div>
+    </section>
+
+    <section id="contacto" class="section">
+        <h2>Contacto</h2>
+        <form action="https://formspree.io/f/xwkgrgdz" method="POST">
+            <input type="text" name="name" placeholder="Nombre completo" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <textarea name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <a class="whatsapp-button" href="https://wa.me/527774200265?text=Hola%2C%20quiero%20más%20información%20sobre%20los%20tatuajes%20y%20perforaciones." target="_blank">
+        Chatea por WhatsApp
+    </a>
+
+    <footer>
+        <p>Mr. Cosas Tattoo Shop – Siempre tu lugar favorito.</p>
+    </footer>
 </body>
 </html>
